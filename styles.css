@@ -1003,3 +1003,6 @@ img.avatar { display: block; width: 40px; height: 40px; object-fit: cover; backg
 .nf { padding-bottom: clamp(48px, 8vw, 96px); max-width: 40rem; }
 .nf .lead { margin-top: 16px; color: var(--ink-2); font-size: 1.125rem; line-height: 1.6; }
 .nf-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+
+/* DiveIn : même apparition que les autres vignettes, sans couper le contour des téléphones */
+.js .dv-shot.clip-reveal.in, .js .dv-trio.clip-reveal.in { clip-path: inset(-60px); }
