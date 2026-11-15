@@ -1,0 +1,8 @@
+# Fichiers privés : jamais en ligne
+_apercu.html
+cv.html
+.claude/
+
+# Fichiers système
+.DS_Store
+_non-publie/

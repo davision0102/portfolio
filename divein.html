@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0f1a" media="(prefers-color-scheme: dark)">
+<title>DiveIn — Daryl Avila Bonnet</title>
+<meta name="description" content="Case study UX : DiveIn, une application pour explorer, enregistrer et partager ses plongées en toute simplicité, même hors ligne.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Daryl Avila Bonnet">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="DiveIn — Daryl Avila Bonnet">
+<meta property="og:description" content="Case study UX : DiveIn, une application pour explorer, enregistrer et partager ses plongées en toute simplicité, même hors ligne.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://darylavilabonnet.fr/divein.html">
+<meta property="og:image" content="https://darylavilabonnet.fr/img/partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="canonical" href="https://darylavilabonnet.fr/divein.html">
+<link rel="preload" href="fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script>(function(){var t;try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})()</script>
+<link rel="stylesheet" href="styles.css">
+<script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js")</script>
+
+</head>
+<body id="top" class="case-page divein-page">
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="pill-nav-wrap">
+  <nav class="pill-nav" aria-label="Principale">
+    <a class="pn-brand" href="index.html" aria-label="Accueil">DA</a>
+    <div class="pn-links">
+      <a href="projets.html" aria-current="page"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="2"/><path d="M2 6h12"/></svg>Projets</a>
+      <a href="about.html"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="5.5" r="2.5"/><path d="M3.5 13.5c.6-2.4 2.4-3.5 4.5-3.5s3.9 1.1 4.5 3.5"/></svg>À propos</a>
+      <a href="blog.html"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5h6l2.5 2.5v8.5h-8.5z"/><path d="M6 8h4M6 10.5h4"/></svg>Blog</a>
+    </div>
+    <a class="pn-mail" href="#contact" aria-label="Me contacter"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="2"/><path d="M2.5 4.5 8 9l5.5-4.5"/></svg></a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <main id="contenu">
+    <div class="cs-hero">
+      <a class="back" href="projets.html">← Tous les projets</a>
+      <h1 class="hero-title divein-title"><span class="line"><span>DiveIn :</span></span> <span class="line"><span>Explorez, enregistrez et partagez vos plongées en toute simplicité</span></span></h1>
+      <p class="sub">Une application mobile pour les plongeurs loisirs : noter chaque plongée en quelques secondes, même sans réseau, la retrouver, la partager et en garder un vrai souvenir.</p>
+      <dl class="facts">
+        <div><dt>Rôle</dt><dd>UX/UI Designer &amp; chef de projet, en solo</dd></div>
+        <div><dt>Plateforme</dt><dd>App mobile iOS &amp; Android</dd></div>
+        <div><dt>Méthodes</dt><dd>Entretiens, questionnaire, personas, benchmark, MoSCoW, tests</dd></div>
+        <div><dt>Contexte</dt><dd>DC START, mon projet personnel sur 2 ans · Master 2 Direction artistique, Digital Campus Paris · <span class="nowrap">septembre 2025</span></dd></div>
+      </dl>
+    </div>
+
+    <figure class="cs-cover cover-deep dv-cover">
+      <div class="dv-trio"><span class="dv-shot"><img src="img/divein/v1s/onboarding-2.jpg" alt="Onboarding : enregistrez vos aventures" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/social.jpg" alt="Le fil de la communauté" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/profil-1.jpg" alt="Le profil d'un plongeur" width="360" height="780" loading="lazy"></span></div>
+    </figure>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Le contexte</h2></div>
+        <div class="prose">
+          <p>Chez moi, la plongée est une affaire de famille. Mon père tient des carnets faits main, plastifiés, décorés de stickers et tamponnés avec soin. Les miens finissaient trempés au fond du sac étanche.</p>
+          <p>En France, on compte <strong>entre 400 000 et 500 000 plongeurs actifs</strong>, qui font en moyenne 8 plongées par an. Pourtant, très peu utilisent un outil numérique pour garder une trace de leurs plongées.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Le problème</h2></div>
+        <div class="prose">
+          <p>Pour documenter ses plongées, un plongeur loisir doit aujourd'hui choisir entre :</p>
+          <ul>
+            <li>des applications <strong>pensées pour les experts</strong>, puissantes mais intimidantes</li>
+            <li>un <strong>carnet papier</strong> qui se mouille, s'oublie ou se perd</li>
+            <li>ou… rien du tout</li>
+          </ul>
+          <p class="quote">Comment concevoir une application intuitive, communautaire et utilisable hors ligne, qui transforme chaque plongée en souvenir ?</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>La recherche</h2></div>
+        <div class="prose">
+          <div class="dv-methods">
+            <div><b>15</b><span>entretiens semi-directifs de 30 à 45 minutes, avec 8 débutants et 7 plongeurs confirmés</span></div>
+            <div><b>52</b><span>réponses à un questionnaire en ligne, du débutant au plongeur aguerri</span></div>
+            <div><b>1 fois</b><span>par semaine, une veille sur les apps, les forums et les communautés de plongeurs</span></div>
+          </div>
+          <p>Quatre enseignements ont guidé toute la conception :</p>
+          <div class="dv-insights">
+            <div class="c-sky"><b>Trop complexe</b><p>Les débutants se perdent, et même les confirmés refusent de passer 20 minutes à remplir une plongée.</p></div>
+            <div class="c-peach"><b>Le papier fragile</b><p>Le carnet papier reste aimé, mais il se mouille, s'oublie ou se perd.</p></div>
+            <div class="c-mint"><b>Hors ligne obligatoire</b><p>Sur un bateau, le réseau ne suit pas toujours. L'app doit marcher sans.</p></div>
+            <div class="c-lilac"><b>Partager des émotions</b><p>Les plongeurs veulent raconter leurs plongées et leurs spots, pas seulement aligner des chiffres.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Deux personas</h2></div>
+        <div class="prose">
+          <div class="duo-grid">
+            <div class="duo persona"><span class="persona-tag c-sky">Débutante</span><h3>Alice, 26 ans</h3><p class="persona-quote">« Si c'est plus compliqué qu'un selfie, j'abandonne. »</p><p>Motivée mais pas patiente, elle cherche de la sécurité, des repères visuels et une interface qui ne lui parle pas comme un manuel technique.</p></div>
+            <div class="duo persona"><span class="persona-tag c-mint">Confirmé</span><h3>Alain, 59 ans</h3><p class="persona-quote">« Si je ne l'ai pas noté, ça n'a pas existé. »</p><p>Gardien de ses souvenirs, il veut retrouver toutes ses plongées en un clic, comparer ses statistiques et imprimer le tout dans un bel objet.</p></div>
+          </div>
+          <p>Alain, c'est mon père. Alice me rappelle que la simplicité fait partie du design. Chaque choix de fonctionnalité a été pensé pour eux deux.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Ce qui existe déjà</h2></div>
+        <div class="prose">
+          <div class="dv-bench">
+            <div><b>Subsurface, DiveLog</b><span>Très complètes, mais pensées pour les plongeurs techniques. Effrayantes pour un débutant.</span></div>
+            <div><b>Deepblu, Diviac, PlongéeLoisir</b><span>Plus grand public, mais souvent mal entretenues, parfois figées depuis 2018.</span></div>
+            <div><b>PADI</b><span>La plus connue, mais centrée sur la formation et son propre écosystème.</span></div>
+            <div><b>Forums et groupes</b><span>L'énergie communautaire est là, mais éparpillée entre plusieurs plateformes.</span></div>
+          </div>
+          <p><strong>L'opportunité :</strong> aucune application ne réunit à la fois la simplicité, le fonctionnement hors ligne et la dimension souvenir.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec dv-wide">
+      <div class="dv-wide-head">
+        <h2>Les principes de design</h2>
+        <p>Quatre principes tirés de la recherche, qui ont servi de filtre à chaque décision.</p>
+      </div>
+      <div class="dv-principles">
+        <article><div class="dv-p-top"><span class="dv-tile c-sky"><svg class="dv-ic" viewBox="0 0 16 16" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg></span></div><h3>Simple avant tout</h3><p>Même un baptême de plongée doit pouvoir utiliser l'app sans tutoriel. Pas de jargon, des icônes qui parlent.</p><p class="dv-outcome">Dans la V1 : des choix en un geste, illustrés par des icônes.</p></article>
+        <article><div class="dv-p-top"><span class="dv-tile c-mint"><svg class="dv-ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 12.5h7a2.5 2.5 0 0 0 .3-5A3.5 3.5 0 0 0 5 6.5a3 3 0 0 0-.5 6z"/><path d="m2 2 12 12"/></svg></span></div><h3>Hors ligne d'abord</h3><p>Sur un bateau, le réseau ne suit pas. Tout est enregistré sur le téléphone, puis synchronisé au retour.</p><p class="dv-outcome">Pendant les tests : le hors ligne, cité comme <span class="nowrap">« un vrai plus »</span>.</p></article>
+        <article><div class="dv-p-top"><span class="dv-tile c-peach"><svg class="dv-ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3.5h4a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 0 7 11.5H3z"/><path d="M13 3.5H9.5A1 1 0 0 0 8.5 5v8a1.5 1.5 0 0 1 1.5-1.5h3z"/></svg></span></div><h3>Le souvenir compte</h3><p>Une plongée ne se mesure pas seulement, elle se revit : photos, espèces croisées, anecdotes.</p><p class="dv-outcome">Dans la V1 : un ressenti et un récit pour chaque plongée.</p></article>
+        <article><div class="dv-p-top"><span class="dv-tile c-lilac"><svg class="dv-ic" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6" cy="6" r="2"/><circle cx="11" cy="6.5" r="1.6"/><path d="M2 13c.4-2 1.8-3 4-3s3.6 1 4 3M10.5 10.2c1.8 0 3 .9 3.5 2.8"/></svg></span></div><h3>Une communauté sincère</h3><p>Partager avec ses binômes et ses clubs, sans course aux likes ni bruit inutile.</p><p class="dv-outcome">Dans la V1 : un fil où chaque plongeur partage ses plongées.</p></article>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Prioriser le MVP</h2></div>
+        <div class="prose">
+          <p>Pour lancer vite une version utile, j'ai trié les fonctionnalités avec la méthode MoSCoW, croisée avec les retours terrain. La règle : une fonction entre dans le MVP seulement si elle apporte une valeur immédiate, mesurable et différenciante.</p>
+          <div class="dv-mvp">
+            <div class="dv-mvp-col"><span class="dv-pill c-mint">MVP</span>
+              <ul>
+                <li><b>Journal de plongée</b><span>Le cœur de l'app : lieu, profondeur, durée, binôme, photos, géolocalisation.</span></li>
+                <li><b>Mode hors ligne</b><span>Un besoin cité par toutes les personnes interrogées.</span></li>
+                <li><b>Carte des spots et filtres</b><span>Trouver des lieux adaptés à son niveau et à la saison.</span></li>
+                <li><b>DiveIn Book</b><span>Ses plongées imprimées dans un vrai carnet, comme ceux de mon père. La vraie différence face aux autres apps.</span></li>
+                <li><b>Compte et sauvegarde</b><span>Pour ne jamais perdre une plongée.</span></li>
+              </ul>
+            </div>
+            <div class="dv-mvp-col later"><span class="dv-pill">Plus tard</span>
+              <ul>
+                <li><b>Communauté</b><span>Suivre ses binômes, commenter.</span></li>
+                <li><b>Statistiques avancées</b><span>Pour les plongeurs les plus réguliers.</span></li>
+                <li><b>Premium</b><span>Multi-appareil, sans publicité.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Tester avec les plongeurs</h2></div>
+        <div class="prose">
+          <p>J'ai testé le prototype haute fidélité Figma avec plusieurs profils : débutants, confirmés et clubs. Le test le plus parlant : celui de mon père, qui tient un carnet papier depuis 1997.</p>
+          <div class="dv-flow" aria-label="Parcours testé">
+            <span>Accueil</span><span>Ajouter une plongée</span><span>Renseigner les infos</span><span>Voir le récap</span><span>Enregistrer</span>
+          </div>
+          <div class="dv-quotes">
+            <blockquote>« Franchement, c'est hyper clair. J'ai mis moins de 2 minutes à remplir ma plongée… et j'ai pas eu besoin de chercher où cliquer. »</blockquote>
+            <blockquote>« Le mode offline, c'est vraiment un plus. Je pourrais remplir ça direct sur le bateau. »</blockquote>
+            <blockquote>« Ça me rappelle mon carnet, mais en plus propre… et surtout, sans risque de le mouiller ! »</blockquote>
+          </div>
+          <div class="dv-results">
+            <div><h3>Ce qui a été validé</h3><ul><li>Une interface claire, même pour un profil peu à l'aise avec le numérique</li><li>Des icônes qui parlent : palmes, profondeur, température</li><li>Un récapitulatif clair à la fin</li><li>Une vraie sensation de carnet numérique</li></ul></div>
+            <div><h3>Ce qu'il faut ajouter</h3><ul><li>Une checklist pré-plongée, en option</li><li>L'import de ses anciennes plongées en scannant son carnet papier</li></ul><p class="dv-outcome">Deux pistes retenues pour la prochaine version.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec dv-wide dv-v1-sec">
+      <div class="dv-wide-head">
+        <h2>Les maquettes</h2>
+        <p>Le prototype haute fidélité conçu dans Figma et testé avec les plongeurs. Dix-sept écrans, regroupés par parcours.</p>
+      </div>
+      <div class="dv-gallery">
+        <div class="dv-journey"><h3>Entrer dans l'app<span>9 écrans</span></h3><div class="dv-strip"><span class="dv-shot"><img src="img/divein/v1s/splash.jpg" alt="Écran de lancement" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/onboarding-1.jpg" alt="Onboarding : explorer" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/onboarding-2.jpg" alt="Onboarding : enregistrer" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/onboarding-3.jpg" alt="Onboarding : partager" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/connexion.jpg" alt="Bienvenue : créer un compte, se connecter ou plus tard" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/creer-un-compte.jpg" alt="Création de compte : email et mot de passe" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/saisir-le-numero-de-telephone.jpg" alt="Saisie du numéro de téléphone" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/recevoir-un-code.jpg" alt="Saisie du code reçu par SMS" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/validation.jpg" alt="Connexion réussie" width="360" height="780" loading="lazy"></span></div></div>
+        <div class="dv-journey"><h3>Utiliser l'app<span>5 écrans</span></h3><div class="dv-strip"><span class="dv-shot"><img src="img/divein/v1s/map.jpg" alt="Explorer : la carte" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/guide.jpg" alt="Le guide : gestes, espèces, sécurité" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/social.jpg" alt="Le fil de la communauté" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/profil-1.jpg" alt="Le profil : certifications et plongées" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/settings.jpg" alt="Les paramètres" width="360" height="780" loading="lazy"></span></div></div>
+        <div class="dv-journey"><h3>Noter une plongée<span>3 écrans</span></h3><div class="dv-strip"><span class="dv-shot"><img src="img/divein/v1s/non-connecte.jpg" alt="Connexion demandée pour créer une plongée" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/add-dive-logs-7.jpg" alt="Créer une plongée, étape 1" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="img/divein/v1s/add-dive-logs-8.jpg" alt="Créer une plongée, étape 2 : ressenti, note, binôme" width="360" height="780" loading="lazy"></span></div></div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>L'identité</h2></div>
+        <div class="prose">
+          <figure class="dv-logo"><img src="img/divein/logo.jpg" alt="Le logo DiveIn : le I est remplacé par un tuba et un masque" width="1700" height="1180" loading="lazy"></figure>
+          <p>Le nom se lit <span class="nowrap">« Dive In »</span> : plonge dedans. Dans le logo, le <span class="nowrap">« I »</span> devient un <strong>tuba associé à un masque</strong> : l'outil qui rend l'immersion possible, comme si l'on enfilait son tuba avant d'entrer dans l'app.</p>
+          <div class="dv-palette">
+            <div><span style="background:#061014"></span><b>Midnight Depth</b><em>#061014 · le calme des 20 mètres</em></div>
+            <div><span style="background:#051C23"></span><b>Icy Abyss</b><em>#051C23 · les reliefs et la technique</em></div>
+            <div><span style="background:#026F81"></span><b>Glacial Glow</b><em>#026F81 · le rayon qui traverse la surface</em></div>
+            <div><span style="background:#BEE6E8"></span><b>Frozen Serenity</b><em>#BEE6E8 · l'air et l'équilibre</em></div>
+            <div><span style="background:#EDF3F5"></span><b>Glass</b><em>#EDF3F5 · le fond, la respiration</em></div>
+          </div>
+          <p>Les composants suivent la même logique : un design plat, lisible en plein soleil sur le bateau, et des icônes simples qui reprennent le vocabulaire de la plongée.</p>
+          <figure class="dv-stickers"><img src="img/divein/stickers.jpg" alt="Planche de stickers DiveIn : plongeurs, bloc, repère poisson, carnet, coquillage et logo" width="1310" height="2000" loading="lazy"><figcaption>Les stickers du DiveIn Book, dans l'esprit des carnets de mon père.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Et maintenant</h2></div>
+        <div class="prose">
+          <p>Le projet DC START est terminé, mais l'aventure continue : l'application va être refaite. La prochaine étape est de repartir de ce prototype et des retours des tests pour concevoir une nouvelle version, puis de la faire tester à nouveau par des plongeurs débutants et confirmés.</p>
+          <a class="dv-download" href="docs/dossier-divein.pdf" download><span class="dv-download-ic"><svg class="dv-ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3.5h4a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 0 7 11.5H3z"/><path d="M13 3.5H9.5A1 1 0 0 0 8.5 5v8a1.5 1.5 0 0 1 1.5-1.5h3z"/></svg></span><span><b>Télécharger le dossier complet</b>PDF · 106 pages · stratégie, recherche, design et business plan</span><span class="dv-download-arrow">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <a class="next" href="fabrik.html">
+      <span>Projet suivant</span>
+      <b>Fabrik →</b>
+    </a>
+
+    <section id="contact" class="contact" aria-labelledby="t-contact">
+      <p class="contact-avail"><span class="dot" aria-hidden="true"></span>Disponible pour un CDI · Île-de-France</p>
+      <h2 id="t-contact">Votre prochain Product Designer, c'est peut-être moi.</h2>
+      <p class="contact-sub">Je cherche une équipe où concevoir des produits utiles, du terrain jusqu'au code. Parlons-en.</p>
+      <div class="contact-actions">
+        <a class="btn btn-white" href="mailto:abonnetda@gmail.com"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="2"/><path d="M2.5 4.5 8 9l5.5-4.5"/></svg>M'écrire</a>
+        <button type="button" class="btn btn-ghost-white copy-mail" data-mail="abonnetda@gmail.com"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M3 10.5V3.5A1 1 0 0 1 4 2.5h6.5"/></svg><span class="copy-label">Copier l'email</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ft-c">
+    <p class="ft-c-lead">Me retrouver ailleurs</p>
+    <ul class="chips ft-chips">
+      <li><a class="chip c-sky" href="https://www.linkedin.com/in/darylavilabonnet/">LinkedIn ↗</a></li>
+      <li><a class="chip c-lilac" href="https://github.com/davision0102">GitHub ↗</a></li>
+      <li><a class="chip c-lemon" href="cv-daryl-avila-bonnet.pdf" download>Mon CV en PDF ↓</a></li>
+    </ul>
+    <div class="ft-b-row"><span>© 2026 Daryl Avila Bonnet</span><button type="button" class="ft-theme" aria-label="Passer en mode sombre"><svg class="i-moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg><svg class="i-sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.5M8 13v1.5M1.5 8H3M13 8h1.5M3.4 3.4l1 1M11.6 11.6l1 1M3.4 12.6l1-1M11.6 4.4l1-1"/></svg><span class="ft-theme-label">Mode sombre</span></button><a href="#top" aria-label="Conçu avec amour, retour en haut de page">Conçu avec amour ↑</a></div>
+  </footer>
+</div>
+<script src="site.js" defer></script>
+</body>
+</html>
