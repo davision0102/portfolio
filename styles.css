@@ -1006,3 +1006,11 @@ img.avatar { display: block; width: 40px; height: 40px; object-fit: cover; backg
 
 /* DiveIn : même apparition que les autres vignettes, sans couper le contour des téléphones */
 .js .dv-shot.clip-reveal.in, .js .dv-trio.clip-reveal.in { clip-path: inset(-60px); }
+
+/* Pied de page : mode et langue */
+.ft-tools { display: inline-flex; align-items: center; gap: 8px; }
+.ft-lang { display: inline-flex; align-items: center; padding: 3px; border: 1px solid var(--line); border-radius: 999px; }
+.ft-lang a { display: inline-flex; align-items: center; justify-content: center; min-width: 36px; min-height: 28px; margin: 0; padding: 0 10px; border-radius: 999px; font: 600 .8125rem/1 var(--body); color: var(--ink-3); text-decoration: none; }
+.ft-lang a[aria-current] { background: var(--paper-2); color: var(--ink); }
+@media (hover: hover) and (pointer: fine) { .ft-lang a:not([aria-current]):hover { color: var(--ink); } }
+.ft-lang a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }

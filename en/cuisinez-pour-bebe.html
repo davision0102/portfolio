@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0f1a" media="(prefers-color-scheme: dark)">
+<title>Cuisinez pour Bébé - Daryl AB</title>
+<meta name="description" content="UX/UI case study: the Cuisinez pour Bébé mobile app, 1,800 recipes designed for busy parents.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Daryl Avila Bonnet">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Cuisinez pour Bébé - Daryl AB">
+<meta property="og:description" content="UX/UI case study: the Cuisinez pour Bébé mobile app, 1,800 recipes designed for busy parents.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://darylavilabonnet.fr/en/cuisinez-pour-bebe">
+<meta property="og:image" content="https://darylavilabonnet.fr/img/partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="canonical" href="https://darylavilabonnet.fr/en/cuisinez-pour-bebe">
+<link rel="alternate" hreflang="fr" href="https://darylavilabonnet.fr/cuisinez-pour-bebe">
+<link rel="alternate" hreflang="en" href="https://darylavilabonnet.fr/en/cuisinez-pour-bebe">
+<link rel="alternate" hreflang="x-default" href="https://darylavilabonnet.fr/cuisinez-pour-bebe">
+<link rel="preload" href="../fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script>(function(){var t;try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})()</script>
+<link rel="stylesheet" href="../styles.css">
+<script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js")</script>
+
+</head>
+<body id="top" class="case-page">
+<a class="skip" href="#contenu">Skip to content</a>
+<header class="pill-nav-wrap">
+  <nav class="pill-nav" aria-label="Main">
+    <a class="pn-brand" href="./" aria-label="Home">DA</a>
+    <div class="pn-links">
+      <a href="projets" aria-current="page"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="2"/><path d="M2 6h12"/></svg>Projects</a>
+      <a href="about"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="5.5" r="2.5"/><path d="M3.5 13.5c.6-2.4 2.4-3.5 4.5-3.5s3.9 1.1 4.5 3.5"/></svg>About</a>
+      <a href="blog"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5h6l2.5 2.5v8.5h-8.5z"/><path d="M6 8h4M6 10.5h4"/></svg>Blog</a>
+    </div>
+    <a class="pn-mail" href="#contact" aria-label="Contact me"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="2"/><path d="M2.5 4.5 8 9l5.5-4.5"/></svg></a>
+  </nav>
+</header>
+<div class="wrap">
+
+  <main id="contenu">
+    <div class="cs-hero">
+      <a class="back" href="projets">← All projects</a>
+      <h1 class="hero-title"><span class="line"><span>Cuisinez pour Bébé:</span></span> <span class="line"><span>1,800 recipes,</span></span> <span class="line"><span>one free hand.</span></span></h1>
+      <p class="sub">Turning a popular recipe website into an app that a busy parent can use in seconds: find the right recipe for their child's age, plan the week, cook without getting lost.</p>
+      <dl class="facts">
+        <div><dt>Role</dt><dd>UX/UI Designer</dd></div>
+        <div><dt>Team</dt><dd>2 designers, 1 lead developer</dd></div>
+        <div><dt>Platforms</dt><dd>iOS &amp; Android (React Native)</dd></div>
+        <div><dt>Context</dt><dd>BearStudio, <span class="nowrap">February 2026</span></dd></div>
+        <div><dt>Scale</dt><dd>1,800+ recipes, 150,000+ visits a month on the website</dd></div>
+      </dl>
+    </div>
+
+    <figure class="cs-cover">
+      <img class="clip-reveal" src="../img/cpb/couverture.webp" alt="Screens from the previous version of the app: planning, browsing, cooking and tracking" width="1024" height="473">
+    </figure>
+
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>The context</h2></div>
+        <div class="prose">
+          <p>Cuisinez pour Bébé started with the home-made recipes of Clémence, a young mum who wanted healthy, simple and varied food for her child. The blog became a go-to website for introducing solid foods: <strong>over 1,800 recipes sorted by age</strong>, weekly batch-cooking menus and a very active community.</p>
+          <p>That success revealed a need. Most parents were already browsing the site on their phones, and they wanted faster access to their recipes, favourites and menus, in a real app.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>The challenge</h2></div>
+        <div class="prose">
+          <p class="quote">Bringing a whole world of content to mobile, without making it heavier.</p>
+          <p>The app had to be a natural extension of the website, with three product constraints:</p>
+          <ul>
+            <li> <strong>navigation organised by the child's age</strong></li>
+            <li> <strong>easier access to the batch-cooking menus</strong></li>
+            <li>a <strong>freemium model</strong> that's easy to understand and doesn't block discovery</li>
+          </ul>
+          <p>All for someone who rarely has both hands free: a child to look after, something cooking, a phone held in one hand.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>My role</h2></div>
+        <div class="prose">
+          <p>I worked as a pair with BearStudio's Lead UX/UI Designer, alongside the Lead full-stack developer.</p>
+          <ul>
+            <li><strong>Understand</strong> young parents' needs and expectations on mobile</li>
+            <li><strong>Structure</strong> the information architecture and user flows</li>
+            <li><strong>Prototype</strong>, from low to high fidelity</li>
+            <li><strong>Iterate</strong> with the clients, version after version</li>
+          </ul>
+          <h3>On the technical side</h3>
+          <p>Working closely with the developers shaped many design decisions.</p>
+          <ul class="tech-tags">
+            <li>React Native · iOS &amp; Android</li>
+            <li>WordPress REST API</li>
+            <li>Algolia search</li>
+            <li>Authentication &amp; freemium</li>
+            <li>Shared design ↔ dev components</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>From V1 to today</h2></div>
+        <div class="prose">
+          <h3>V1: laying the foundations</h3>
+          <p>The first version brought over the website's key features. The goal wasn't to optimise every interaction, but to validate the core flows and the value of an app: weekly menus on opening, a catalogue by age, recipe pages, favourites, profile, paywall and guided sign-up.</p>
+          <h3>Today: thinking in journeys, not screens</h3>
+          <p>Iterating with the clients, we reorganised the app around five key journeys:</p>
+          <ol class="journeys">
+            <li>Planning the week's meals without having to decide</li>
+            <li>Quickly finding a suitable recipe (age, texture, time of day)</li>
+            <li>Cooking without friction, with clear, continuous reading</li>
+            <li>Tracking food diversification over time</li>
+            <li>Managing a family profile and premium access without confusion</li>
+          </ol>
+          <p>Since then, new features have arrived: <strong>support for several children</strong> in one account and a <strong>shopping list</strong>. The premium access screens were also reworked to be clearer.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>The method</h2></div>
+        <div class="prose">
+          <p>Every change goes through interactive prototypes before development, to catch the classic mobile pitfalls early: visual overload, awkward gestures, overly complex filters, secondary actions that stand out too much, a break between the list and the detail view.</p>
+          <ol class="steps">
+            <li><b>Prototype</b><span>low then high fidelity</span></li>
+            <li><b>Simulate</b><span>real sequences</span></li>
+            <li><b>Observe</b><span>where people get stuck or hesitate</span></li>
+            <li><b>Adjust</b><span>with the clients, then ship</span></li>
+          </ol>
+          <p>The prototypes check four things:</p>
+          <ul>
+            <li>that people understand <strong>where to tap, when and why</strong></li>
+            <li>that navigation stays <strong>shallow</strong>, with no dead ends</li>
+            <li>that dense lists stay <strong>readable and well structured</strong></li>
+            <li>that screens stay <strong>consistent</strong> with each other</li>
+          </ul>
+          <p>This approach set four rules for the whole app:</p>
+          <ul>
+            <li><strong>Prioritise</strong>: photo, title, age, and nothing more at first glance.</li>
+            <li><strong>Shorten the path to action</strong>: open, favourite or add to the shopping list without an extra screen.</li>
+            <li><strong>Create “hub” screens</strong>, like the weekly menu or the recipes, that bring together the main need.</li>
+            <li><strong>Keep visual continuity</strong>: a card understood in the catalogue is understood in the favourites and the menu too.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Close-up: the recipe card</h2></div>
+        <div class="prose">
+          <p>The catalogue isn't an advanced search engine. It has to help a parent decide quickly, based on their own criteria: age, texture, type of meal, dietary constraints. It plays three roles at once: <strong>inspiring</strong>, <strong>helping to sort</strong>, and giving <strong>quick access to action</strong> (cook, save, plan).</p>
+          <p>There were many constraints: lots of recipes to display, sometimes very long titles and uneven data, several criteria to combine, short gestures on mobile, and continuity to keep between the list and the recipe page. The risk was twofold: an overloaded catalogue, or filters so complex they discourage exploring.</p>
+
+          <figure>
+            <div class="frame"><img src="../img/cpb/menu-catalogue.webp" alt="Weekly meal planning, and the recipe catalogue with two active filters" width="1024" height="971" loading="lazy"></div>
+            <figcaption>The catalogue can be scanned in seconds: image, title, age.</figcaption>
+          </figure>
+
+          <div class="decision c-lemon">
+            <h3><span class="num">1</span> The card as the unit of reading</h3>
+            <p>Each card allows three quick reads: <strong>recognise</strong> the idea from the image, <strong>understand</strong> the dish from the title, <strong>confirm</strong> that it's age-appropriate. The image dominates, because photo quality is one of the brand's strengths. The title is sized for long names. The age is visible, but secondary.</p>
+          </div>
+
+          <div class="decision c-sky">
+            <h3><span class="num">2</span> Filters as the main lever</h3>
+            <p>Rather than a hidden option, filters gradually narrow the choice without mental effort:</p>
+            <ul>
+              <li>clear groups: diet, type of dish, time of day, season, special needs</li>
+              <li>quick, thumb-friendly selection</li>
+              <li> <strong>explicit confirmation</strong>, when the parent is ready, not on every tap</li>
+              <li> <strong>instant feedback</strong> on the number of recipes found</li>
+            </ul>
+          </div>
+
+          <div class="pair">
+            <figure>
+              <div class="frame"><img src="../img/cpb/carte-recette.webp" alt="Close-up of the first two recipe cards in the catalogue" width="515" height="1024" loading="lazy"></div>
+              <figcaption>Image, title, age: the card reads in three steps.</figcaption>
+            </figure>
+            <figure>
+              <div class="frame"><img src="../img/cpb/filtres.webp" alt="The catalogue filter panel with the number of results" width="1024" height="964" loading="lazy"></div>
+              <figcaption>Filters apply in one gesture and show the number of results.</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>A long-term collaboration</h2></div>
+        <div class="prose">
+          <p>BearStudio has been working with Cuisinez pour Bébé since 2021. The work relies on trust and responsiveness: Slack messages, regular check-ins, and Loom videos to explain an expectation or ask for feedback.</p>
+          <p>That rhythm is what lets the app keep evolving after V1, as close as possible to what parents experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>What parents say</h2></div>
+        <div class="prose">
+          <p>In App Store and Google Play reviews, and in messages sent to the brand, the same themes come up: <strong>ease of use, clear recipes, time saved</strong> when planning meals, and trust in the content.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>The app today</h2></div>
+        <div class="prose">
+          <p>The screens above show the previous version, our starting point. Here's what the app looks like today, after these changes: the recipe catalogue, a recipe page and the weekly menu.</p>
+          <figure>
+            <div class="frame"><img src="../img/cpb/ecrans.webp" alt="Three current screens of the app: the recipe catalogue, a recipe page and the weekly menu" width="1386" height="876" loading="lazy"></div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Learn more</h2></div>
+        <div class="prose">
+          <ul class="more-links">
+            <li><a href="https://www.cuisinez-pour-bebe.fr/">The Cuisinez pour Bébé website (in French) ↗</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <a class="next" href="divein">
+      <span>Next project</span>
+      <b>DiveIn →</b>
+    </a>
+    <section id="contact" class="contact" aria-labelledby="t-contact">
+      <p class="contact-avail"><span class="dot" aria-hidden="true"></span>Open to a permanent role · Paris area</p>
+      <h2 id="t-contact">Your next Product Designer might just be me.</h2>
+      <p class="contact-sub">I'm looking for a team where I can design useful products, from the field all the way to code. Let's talk.</p>
+      <div class="contact-actions">
+        <a class="btn btn-white" href="mailto:abonnetda@gmail.com"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="2"/><path d="M2.5 4.5 8 9l5.5-4.5"/></svg>Email me</a>
+        <button type="button" class="btn btn-ghost-white copy-mail" data-mail="abonnetda@gmail.com"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M3 10.5V3.5A1 1 0 0 1 4 2.5h6.5"/></svg><span class="copy-label">Copy email</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ft-c">
+    <p class="ft-c-lead">Find me elsewhere</p>
+    <ul class="chips ft-chips">
+      <li><a class="chip c-sky" href="https://www.linkedin.com/in/darylavilabonnet/">LinkedIn ↗</a></li>
+      <li><a class="chip c-lilac" href="https://github.com/davision0102">GitHub ↗</a></li>
+      <li><a class="chip c-lemon" href="../CV-Daryl-Avila-Bonnet-Product-Designer.pdf" download>My CV (PDF, in French) ↓</a></li>
+    </ul>
+    <div class="ft-b-row"><span>© 2026 Daryl Avila Bonnet</span><div class="ft-tools"><button type="button" class="ft-theme" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg><svg class="i-sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.5M8 13v1.5M1.5 8H3M13 8h1.5M3.4 3.4l1 1M11.6 11.6l1 1M3.4 12.6l1-1M11.6 4.4l1-1"/></svg><span class="ft-theme-label">Dark mode</span></button><nav class="ft-lang" aria-label="Langue / Language"><a href="../cuisinez-pour-bebe" hreflang="fr" lang="fr">FR</a><a href="cuisinez-pour-bebe" hreflang="en" lang="en" aria-current="page">EN</a></nav></div><a href="#top" aria-label="Made with love, back to top">Made with love ↑</a></div>
+  </footer>
+</div>
+<script src="../site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0f1a" media="(prefers-color-scheme: dark)">
+<title>Fabrik - Daryl AB</title>
+<meta name="description" content="Case study: how my personal React template became Fabrik, an open-source tool that helps designers build a real website with AI.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Daryl Avila Bonnet">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Fabrik - Daryl AB">
+<meta property="og:description" content="Case study: how my personal React template became Fabrik, an open-source tool that helps designers build a real website with AI.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://darylavilabonnet.fr/en/fabrik">
+<meta property="og:image" content="https://darylavilabonnet.fr/img/partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="canonical" href="https://darylavilabonnet.fr/en/fabrik">
+<link rel="alternate" hreflang="fr" href="https://darylavilabonnet.fr/fabrik">
+<link rel="alternate" hreflang="en" href="https://darylavilabonnet.fr/en/fabrik">
+<link rel="alternate" hreflang="x-default" href="https://darylavilabonnet.fr/fabrik">
+<link rel="preload" href="../fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script>(function(){var t;try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})()</script>
+<link rel="stylesheet" href="../styles.css">
+<script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js")</script>
+
+</head>
+<body id="top" class="case-page">
+<a class="skip" href="#contenu">Skip to content</a>
+
+<header class="pill-nav-wrap">
+  <nav class="pill-nav" aria-label="Main">
+    <a class="pn-brand" href="./" aria-label="Home">DA</a>
+    <div class="pn-links">
+      <a href="projets" aria-current="page"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="2"/><path d="M2 6h12"/></svg>Projects</a>
+      <a href="about"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="5.5" r="2.5"/><path d="M3.5 13.5c.6-2.4 2.4-3.5 4.5-3.5s3.9 1.1 4.5 3.5"/></svg>About</a>
+      <a href="blog"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5h6l2.5 2.5v8.5h-8.5z"/><path d="M6 8h4M6 10.5h4"/></svg>Blog</a>
+    </div>
+    <a class="pn-mail" href="#contact" aria-label="Contact me"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="2"/><path d="M2.5 4.5 8 9l5.5-4.5"/></svg></a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <main id="contenu">
+    <div class="cs-hero">
+      <a class="back" href="projets">← All projects</a>
+      <h1 class="hero-title"><span class="line"><span>Fabrik:</span></span> <span class="line"><span>from my personal template</span></span> <span class="line"><span>to a shared tool.</span></span></h1>
+      <p class="sub">A free React template to build a real website, even if you're not a developer. I first built it for myself, then rebuilt it from the ground up to share it as open source.</p>
+      <dl class="facts">
+        <div><dt>Type</dt><dd>Personal project, open source (MIT licence)</dd></div>
+        <div><dt>Date</dt><dd>November 2026</dd></div>
+        <div><dt>Role</dt><dd>Design, code and documentation, with an AI assistant</dd></div>
+        <div><dt>Stack</dt><dd>React 19, TypeScript, Vite 8, Tailwind CSS 4, shadcn/ui</dd></div>
+        <div><dt>Links</dt><dd><a href="https://davision0102.github.io/fabrik/">Demo</a> · <a href="https://github.com/davision0102/fabrik">GitHub</a></dd></div>
+      </dl>
+    </div>
+
+    <figure class="cs-cover cover-peach">
+      <img class="clip-reveal" src="../img/fabrik/apres-01-accueil-desktop.jpg" alt="The Fabrik home page (“A real React site, even if you&#x27;re not a developer”), next to a terminal showing the install and a request made to the AI assistant" width="1800" height="1125">
+    </figure>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Where it started</h2></div>
+        <div class="prose">
+          <p>At BearStudio, we were constantly encouraged to try AI, stay curious and look at what others were doing. That's where I started building my own template, on the side.</p>
+          <p class="quote">I'm a designer, not a developer, and I wanted a foundation to go from mockup to a real website.</p>
+          <p>The first version was called <strong>LDDAB Studio</strong>, in a repository named <span class="nowrap">DA-VISION</span>. A ready-to-use React base that I cloned to start a site, an app or a prototype. I talk about it in my article <a href="../article-ux-designer-ia">UX/UI designer in the age of AI agents (in French)</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>What wasn't working</h2></div>
+        <div class="prose">
+          <p>Looking at it with fresh eyes, V1 mostly looked like a personal draft:</p>
+          <ul>
+            <li><strong>A meaningless home page</strong>: a title, two buttons that led nowhere and three generic cards.</li>
+            <li><strong>Filler content</strong>, like a “My projects” page with Project 1, 2 and 3, and copy written in the first person.</li>
+            <li><strong>Nothing to guide the AI</strong>: two instruction folders, each containing a single sentence.</li>
+            <li><strong>A fragile foundation</strong>: the build crashed because of an outdated option, the automatic check didn't check anything, and there were no tests.</li>
+          </ul>
+          <figure>
+            <div class="frame frame-peach"><img src="../img/fabrik/avant-02-projets-desktop.jpg" alt="The V1 “My projects” page, with three cards: Project 1, Project 2 and Project 3" width="1800" height="1125" loading="lazy"></div>
+            <figcaption>The V1 Projects page: three empty cards.</figcaption>
+          </figure>
+          <p>On 13 November 2026, I decided to rebuild it from the ground up, with one clear goal: another designer should be able to use it without me.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>An identity for a shared tool</h2></div>
+        <div class="prose">
+          <p>A tool you share needs a name that isn't your own. LDDAB Studio became <strong>Fabrik</strong>, and the repository was renamed accordingly.</p>
+          <ul class="tech-tags tags-peach">
+            <li>Warm off-white</li>
+            <li>Ink</li>
+            <li>Signature orange</li>
+            <li>Bricolage Grotesque</li>
+            <li>Three-block logo</li>
+          </ul>
+          <p>A “workshop” identity, evoking a place where things get made. The name and all the copy live in a single file, so anyone can rename the project in two minutes.</p>
+          <div class="pair">
+          <figure>
+            <div class="frame frame-soft"><img src="../img/fabrik/avant-01-accueil-desktop.jpg" alt="Before: the LDDAB Studio home page" width="1800" height="1125" loading="lazy"></div>
+            <figcaption>Before · LDDAB Studio</figcaption>
+          </figure>
+          <figure>
+            <div class="frame frame-peach"><img src="../img/fabrik/apres-01-accueil-desktop.jpg" alt="After: the Fabrik home page" width="1800" height="1125" loading="lazy"></div>
+            <figcaption>After · Fabrik</figcaption>
+          </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>A real home page</h2></div>
+        <div class="prose">
+          <p>The new home page explains at a glance what Fabrik is and how to get started. It has a real headline, a terminal showing how you work with AI, the install command to copy, the tools used, six features, three steps to get going and a final call to action.</p>
+          <p>The “My projects” page became <strong>a component showcase</strong>: buttons, fields, dialogs and cards, shown in light and dark mode, like a Figma library.</p>
+          <figure>
+            <div class="frame frame-peach"><img src="../img/fabrik/apres-02-composants-desktop.jpg" alt="The Fabrik Components page: buttons, badges, fields, dialog and cards" width="1800" height="1452" loading="lazy"></div>
+            <figcaption>The toolbox: every available component, in one place.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Mobile and dark mode</h2></div>
+        <div class="prose">
+          <p>The site adapts to mobile, and dark mode has arrived, with no flash when the page loads.</p>
+          <figure>
+            <div class="frame frame-dark"><img src="../img/fabrik/apres-04-accueil-sombre-desktop.jpg" alt="The Fabrik home page in dark mode" width="1800" height="1125" loading="lazy"></div>
+            <figcaption>Dark mode, which didn't exist in V1.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>AI-ready</h2></div>
+        <div class="prose">
+          <p>This was the biggest piece. The idea: the assistant should understand the project instead of breaking everything.</p>
+          <ul>
+            <li><strong>A user manual for the assistant</strong>: the <code>AGENTS.md</code> file, read by Claude Code, Codex, Cursor or Copilot, explains how the project is organised and the rules to follow.</li>
+            <li><strong>Eleven step-by-step guides</strong>, called skills: turning a Figma mockup into a page, doing a polish pass, adding a page, a form or a test, publishing the site, changing the identity. The assistant picks the right one on its own, depending on the request.</li>
+            <li><strong>The shadcn MCP server</strong>, so the assistant installs the right components.</li>
+          </ul>
+          <p class="quote">You describe what you want to your AI assistant, and it writes the code while respecting the project.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>For people who have never opened a terminal</h2></div>
+        <div class="prose">
+          <p>I wrote the guide I wish I'd had when I started. The README walks you through step by step, from creating a GitHub account to going live, in about twenty minutes the first time.</p>
+          <p>It includes example requests to make to the assistant, an “If you get stuck” section and a small glossary: terminal, repository, commit, component, deploy… The words that scared me when I started.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>A solid foundation</h2></div>
+        <div class="prose">
+          <p>A shared tool has to be reliable. The build was fixed, and safeguards flag problems in the code before it goes live: automatic formatting, tests, a check on every change, and tracked dependency updates. Hosting is free, on GitHub Pages.</p>
+          <dl class="fab-stats">
+            <div><dt>Files changed</dt><dd>57</dd></div>
+            <div><dt>Lines added</dt><dd>~1,450</dd></div>
+            <div><dt>Tests (0 before)</dt><dd>Passing</dd></div>
+            <div><dt>Build</dt><dd>&lt; 1 s</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>What's next</h2></div>
+        <div class="prose">
+          <p>Fabrik is live and open source. I use it for my own projects, and I keep improving it. I'm especially interested in feedback from designers and beginners.</p>
+          <p class="fab-links"><a class="btn btn-primary btn-sm" href="https://davision0102.github.io/fabrik/">View the demo <svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn btn-sm" href="https://github.com/davision0102/fabrik">The code on GitHub</a></p>
+          <p>For the backstory, about a designer discovering code with AI, read my article <a href="../article-ux-designer-ia">UX/UI designer in the age of AI agents (in French)</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <a class="next" href="cuisinez-pour-bebe">
+      <span>Next project</span>
+      <b>Cuisinez pour Bébé →</b>
+    </a>
+
+    <section id="contact" class="contact" aria-labelledby="t-contact">
+      <p class="contact-avail"><span class="dot" aria-hidden="true"></span>Open to a permanent role · Paris area</p>
+      <h2 id="t-contact">Your next Product Designer might just be me.</h2>
+      <p class="contact-sub">I'm looking for a team where I can design useful products, from the field all the way to code. Let's talk.</p>
+      <div class="contact-actions">
+        <a class="btn btn-white" href="mailto:abonnetda@gmail.com"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="2"/><path d="M2.5 4.5 8 9l5.5-4.5"/></svg>Email me</a>
+        <button type="button" class="btn btn-ghost-white copy-mail" data-mail="abonnetda@gmail.com"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M3 10.5V3.5A1 1 0 0 1 4 2.5h6.5"/></svg><span class="copy-label">Copy email</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ft-c">
+    <p class="ft-c-lead">Find me elsewhere</p>
+    <ul class="chips ft-chips">
+      <li><a class="chip c-sky" href="https://www.linkedin.com/in/darylavilabonnet/">LinkedIn ↗</a></li>
+      <li><a class="chip c-lilac" href="https://github.com/davision0102">GitHub ↗</a></li>
+      <li><a class="chip c-lemon" href="../CV-Daryl-Avila-Bonnet-Product-Designer.pdf" download>My CV (PDF, in French) ↓</a></li>
+    </ul>
+    <div class="ft-b-row"><span>© 2026 Daryl Avila Bonnet</span><div class="ft-tools"><button type="button" class="ft-theme" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg><svg class="i-sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.5M8 13v1.5M1.5 8H3M13 8h1.5M3.4 3.4l1 1M11.6 11.6l1 1M3.4 12.6l1-1M11.6 4.4l1-1"/></svg><span class="ft-theme-label">Dark mode</span></button><nav class="ft-lang" aria-label="Langue / Language"><a href="../fabrik" hreflang="fr" lang="fr">FR</a><a href="fabrik" hreflang="en" lang="en" aria-current="page">EN</a></nav></div><a href="#top" aria-label="Made with love, back to top">Made with love ↑</a></div>
+  </footer>
+</div>
+<script src="../site.js" defer></script>
+</body>
+</html>

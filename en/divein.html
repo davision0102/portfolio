@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b0f1a" media="(prefers-color-scheme: dark)">
+<title>DiveIn - Daryl AB</title>
+<meta name="description" content="UX case study: DiveIn, an app to explore, log and share your dives simply, even offline.">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Daryl Avila Bonnet">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="DiveIn - Daryl AB">
+<meta property="og:description" content="UX case study: DiveIn, an app to explore, log and share your dives simply, even offline.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:url" content="https://darylavilabonnet.fr/en/divein">
+<meta property="og:image" content="https://darylavilabonnet.fr/img/partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="canonical" href="https://darylavilabonnet.fr/en/divein">
+<link rel="alternate" hreflang="fr" href="https://darylavilabonnet.fr/divein">
+<link rel="alternate" hreflang="en" href="https://darylavilabonnet.fr/en/divein">
+<link rel="alternate" hreflang="x-default" href="https://darylavilabonnet.fr/divein">
+<link rel="preload" href="../fonts/figtree-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
+<script>(function(){var t;try{t=localStorage.getItem('theme')}catch(e){}if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})()</script>
+<link rel="stylesheet" href="../styles.css">
+<script>if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js")</script>
+
+</head>
+<body id="top" class="case-page divein-page">
+<a class="skip" href="#contenu">Skip to content</a>
+
+<header class="pill-nav-wrap">
+  <nav class="pill-nav" aria-label="Main">
+    <a class="pn-brand" href="./" aria-label="Home">DA</a>
+    <div class="pn-links">
+      <a href="projets" aria-current="page"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="2"/><path d="M2 6h12"/></svg>Projects</a>
+      <a href="about"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="5.5" r="2.5"/><path d="M3.5 13.5c.6-2.4 2.4-3.5 4.5-3.5s3.9 1.1 4.5 3.5"/></svg>About</a>
+      <a href="blog"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5h6l2.5 2.5v8.5h-8.5z"/><path d="M6 8h4M6 10.5h4"/></svg>Blog</a>
+    </div>
+    <a class="pn-mail" href="#contact" aria-label="Contact me"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="2"/><path d="M2.5 4.5 8 9l5.5-4.5"/></svg></a>
+  </nav>
+</header>
+
+<div class="wrap">
+  <main id="contenu">
+    <div class="cs-hero">
+      <a class="back" href="projets">← All projects</a>
+      <h1 class="hero-title divein-title"><span class="line"><span>DiveIn:</span></span> <span class="line"><span>Explore, log and share your dives, simply</span></span></h1>
+      <p class="sub">A mobile app for recreational divers: log each dive in seconds, even with no signal, find it again, share it and keep a real memory of it.</p>
+      <dl class="facts">
+        <div><dt>Role</dt><dd>UX/UI Designer &amp; project lead, solo</dd></div>
+        <div><dt>Platform</dt><dd>iOS &amp; Android mobile app</dd></div>
+        <div><dt>Methods</dt><dd>Interviews, survey, personas, benchmark, MoSCoW, testing</dd></div>
+        <div><dt>Context</dt><dd>DC START, my two-year personal project · Master's in Art Direction, Digital Campus Paris · <span class="nowrap">September 2025</span></dd></div>
+      </dl>
+    </div>
+
+    <figure class="cs-cover cover-deep dv-cover">
+      <div class="dv-trio clip-reveal"><span class="dv-shot"><img src="../img/divein/v1s/onboarding-2.jpg" alt="Onboarding: log your adventures" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/social.jpg" alt="The community feed" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/profil-1.jpg" alt="A diver&#x27;s profile" width="360" height="780" loading="lazy"></span></div>
+    </figure>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>The context</h2></div>
+        <div class="prose">
+          <p>In my family, diving runs deep. My dad keeps handmade logbooks, laminated, decorated with stickers and carefully stamped. Mine always ended up soaked at the bottom of my dry bag.</p>
+          <p>In France, there are <strong>between 400,000 and 500,000 active divers</strong>, who make 8 dives a year on average. Yet very few use a digital tool to keep track of their dives.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>The problem</h2></div>
+        <div class="prose">
+          <p>To log their dives, recreational divers today have to choose between:</p>
+          <ul>
+            <li>apps <strong>built for experts</strong>, powerful but intimidating</li>
+            <li>a <strong>paper logbook</strong> that gets wet, forgotten or lost</li>
+            <li>or… nothing at all</li>
+          </ul>
+          <p class="quote">How do you design an intuitive, community-driven app that works offline and turns every dive into a memory?</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>The research</h2></div>
+        <div class="prose">
+          <div class="dv-methods">
+            <div><b>15</b><span>semi-structured interviews of 30 to 45 minutes, with 8 beginners and 7 experienced divers</span></div>
+            <div><b>52</b><span>responses to an online survey, from beginners to seasoned divers</span></div>
+            <div><b>Once</b><span>a week, monitoring apps, forums and diving communities</span></div>
+          </div>
+          <p>Four insights guided the whole design:</p>
+          <div class="dv-insights">
+            <div class="c-sky"><b>Too complex</b><p>Beginners get lost, and even experienced divers won't spend 20 minutes logging a dive.</p></div>
+            <div class="c-peach"><b>Fragile paper</b><p>People still love paper logbooks, but they get wet, forgotten or lost.</p></div>
+            <div class="c-mint"><b>Offline is a must</b><p>On a boat, there isn't always a signal. The app has to work without it.</p></div>
+            <div class="c-lilac"><b>Sharing emotions</b><p>Divers want to tell the story of their dives and spots, not just list numbers.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Two personas</h2></div>
+        <div class="prose">
+          <div class="duo-grid">
+            <div class="duo persona"><span class="persona-tag c-sky">Beginner</span><h3>Alice, 26</h3><p class="persona-quote">“If it's more complicated than a selfie, I give up.”</p><p>Motivated but not patient, she wants reassurance, visual cues and an interface that doesn't talk to her like a technical manual.</p></div>
+            <div class="duo persona"><span class="persona-tag c-mint">Experienced</span><h3>Alain, 59</h3><p class="persona-quote">“If I didn't write it down, it didn't happen.”</p><p>The keeper of his memories, he wants to find all his dives in one click, compare his stats and print everything into a beautiful keepsake.</p></div>
+          </div>
+          <p>Alain is my dad. Alice reminds me that simplicity is part of design. Every feature decision was made with both of them in mind.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>What already exists</h2></div>
+        <div class="prose">
+          <div class="dv-bench">
+            <div><b>Subsurface, DiveLog</b><span>Very complete, but built for technical divers. Scary for a beginner.</span></div>
+            <div><b>Deepblu, Diviac, PlongéeLoisir</b><span>More mainstream, but often poorly maintained, some frozen since 2018.</span></div>
+            <div><b>PADI</b><span>The best known, but focused on training and its own ecosystem.</span></div>
+            <div><b>Forums and groups</b><span>The community energy is there, but scattered across several platforms.</span></div>
+          </div>
+          <p><strong>The opportunity:</strong> no app combines simplicity, offline use and the memory side all at once.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec dv-wide">
+      <div class="dv-wide-head">
+        <h2>Design principles</h2>
+        <p>Four principles drawn from the research, used as a filter for every decision.</p>
+      </div>
+      <div class="dv-principles">
+        <article><div class="dv-p-top"><span class="dv-tile c-sky"><svg class="dv-ic" viewBox="0 0 16 16" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg></span></div><h3>Simple above all</h3><p>Even someone on their first-ever dive should be able to use the app without a tutorial. No jargon, self-explanatory icons.</p><p class="dv-outcome">In V1: one-tap choices, illustrated with icons.</p></article>
+        <article><div class="dv-p-top"><span class="dv-tile c-mint"><svg class="dv-ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4.5 12.5h7a2.5 2.5 0 0 0 .3-5A3.5 3.5 0 0 0 5 6.5a3 3 0 0 0-.5 6z"/><path d="m2 2 12 12"/></svg></span></div><h3>Offline first</h3><p>On a boat, there's no signal. Everything is saved on the phone, then synced back on land.</p><p class="dv-outcome">During testing: offline mode, described as <span class="nowrap">“a real plus”</span>.</p></article>
+        <article><div class="dv-p-top"><span class="dv-tile c-peach"><svg class="dv-ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3.5h4a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 0 7 11.5H3z"/><path d="M13 3.5H9.5A1 1 0 0 0 8.5 5v8a1.5 1.5 0 0 1 1.5-1.5h3z"/></svg></span></div><h3>Memories matter</h3><p>A dive isn't just measured, it's relived: photos, species spotted, stories.</p><p class="dv-outcome">In V1: a feeling and a story for every dive.</p></article>
+        <article><div class="dv-p-top"><span class="dv-tile c-lilac"><svg class="dv-ic" viewBox="0 0 16 16" aria-hidden="true"><circle cx="6" cy="6" r="2"/><circle cx="11" cy="6.5" r="1.6"/><path d="M2 13c.4-2 1.8-3 4-3s3.6 1 4 3M10.5 10.2c1.8 0 3 .9 3.5 2.8"/></svg></span></div><h3>A genuine community</h3><p>Sharing with your buddies and clubs, with no race for likes and no pointless noise.</p><p class="dv-outcome">In V1: a feed where every diver shares their dives.</p></article>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Prioritising the MVP</h2></div>
+        <div class="prose">
+          <p>To launch a useful version quickly, I sorted the features with the MoSCoW method, cross-checked with field feedback. The rule: a feature only goes into the MVP if it brings immediate, measurable and differentiating value.</p>
+          <div class="dv-mvp">
+            <div class="dv-mvp-col"><span class="dv-pill c-mint">MVP</span>
+              <ul>
+                <li><b>Dive log</b><span>The heart of the app: location, depth, duration, buddy, photos, geolocation.</span></li>
+                <li><b>Offline mode</b><span>A need mentioned by everyone interviewed.</span></li>
+                <li><b>Dive site map and filters</b><span>Finding spots that suit your level and the season.</span></li>
+                <li><b>DiveIn Book</b><span>Your dives printed in a real logbook, like my dad's. The real difference from other apps.</span></li>
+                <li><b>Account and backup</b><span>So you never lose a dive.</span></li>
+              </ul>
+            </div>
+            <div class="dv-mvp-col later"><span class="dv-pill">Later</span>
+              <ul>
+                <li><b>Community</b><span>Following your buddies, commenting.</span></li>
+                <li><b>Advanced stats</b><span>For the most regular divers.</span></li>
+                <li><b>Premium</b><span>Multi-device, ad-free.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>Testing with divers</h2></div>
+        <div class="prose">
+          <p>I tested the high-fidelity Figma prototype with several profiles: beginners, experienced divers and clubs. The most telling test: my dad's, who has kept a paper logbook since 1997.</p>
+          <div class="dv-flow" aria-label="Tested flow">
+            <span>Home</span><span>Add a dive</span><span>Fill in the details</span><span>See the summary</span><span>Save</span>
+          </div>
+          <div class="dv-quotes">
+            <blockquote>“Honestly, it's super clear. It took me less than 2 minutes to log my dive… and I didn't have to look for where to tap.”</blockquote>
+            <blockquote>“Offline mode is a real plus. I could fill it in right there on the boat.”</blockquote>
+            <blockquote>“It reminds me of my logbook, but neater… and above all, no risk of getting it wet!”</blockquote>
+          </div>
+          <div class="dv-results">
+            <div><h3>What was validated</h3><ul><li>A clear interface, even for someone not comfortable with digital tools</li><li>Self-explanatory icons: fins, depth, temperature</li><li>A clear summary at the end</li><li>A real digital logbook feel</li></ul></div>
+            <div><h3>What to add</h3><ul><li>An optional pre-dive checklist</li><li>Importing past dives by scanning your paper logbook</li></ul><p class="dv-outcome">Two ideas kept for the next version.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec dv-wide dv-v1-sec">
+      <div class="dv-wide-head">
+        <h2>The mockups</h2>
+        <p>The high-fidelity prototype designed in Figma and tested with divers. Seventeen screens, grouped by flow.</p>
+      </div>
+      <div class="dv-gallery">
+        <div class="dv-journey"><h3>Getting into the app<span>9 screens</span></h3><div class="dv-strip"><span class="dv-shot"><img src="../img/divein/v1s/splash.jpg" alt="Splash screen" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/onboarding-1.jpg" alt="Onboarding: explore" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/onboarding-2.jpg" alt="Onboarding: log" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/onboarding-3.jpg" alt="Onboarding: share" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/connexion.jpg" alt="Welcome: create an account, sign in or later" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/creer-un-compte.jpg" alt="Account creation: email and password" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/saisir-le-numero-de-telephone.jpg" alt="Entering a phone number" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/recevoir-un-code.jpg" alt="Entering the code received by text" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/validation.jpg" alt="Signed in" width="360" height="780" loading="lazy"></span></div></div>
+        <div class="dv-journey"><h3>Using the app<span>5 screens</span></h3><div class="dv-strip"><span class="dv-shot"><img src="../img/divein/v1s/map.jpg" alt="Explore: the map" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/guide.jpg" alt="The guide: hand signals, species, safety" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/social.jpg" alt="The community feed" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/profil-1.jpg" alt="The profile: certifications and dives" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/settings.jpg" alt="Settings" width="360" height="780" loading="lazy"></span></div></div>
+        <div class="dv-journey"><h3>Logging a dive<span>3 screens</span></h3><div class="dv-strip"><span class="dv-shot"><img src="../img/divein/v1s/non-connecte.jpg" alt="Sign-in required to create a dive" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/add-dive-logs-7.jpg" alt="Create a dive, step 1" width="360" height="780" loading="lazy"></span><span class="dv-shot"><img src="../img/divein/v1s/add-dive-logs-8.jpg" alt="Create a dive, step 2: feeling, rating, buddy" width="360" height="780" loading="lazy"></span></div></div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>The identity</h2></div>
+        <div class="prose">
+          <figure class="dv-logo"><img src="../img/divein/logo.jpg" alt="The DiveIn logo: the I is replaced by a snorkel and a mask" width="1700" height="1180" loading="lazy"></figure>
+          <p>The name reads <span class="nowrap">“Dive In”</span>: jump right in. In the logo, the <span class="nowrap">“I”</span> becomes a <strong>snorkel paired with a mask</strong>: the gear that makes immersion possible, as if you were putting on your snorkel before entering the app.</p>
+          <div class="dv-palette">
+            <div><span style="background:#061014"></span><b>Midnight Depth</b><em>#061014 · the calm at 20 metres</em></div>
+            <div><span style="background:#051C23"></span><b>Icy Abyss</b><em>#051C23 · the seabed and the technical side</em></div>
+            <div><span style="background:#026F81"></span><b>Glacial Glow</b><em>#026F81 · the light beam breaking through the surface</em></div>
+            <div><span style="background:#BEE6E8"></span><b>Frozen Serenity</b><em>#BEE6E8 · air and balance</em></div>
+            <div><span style="background:#EDF3F5"></span><b>Glass</b><em>#EDF3F5 · the background, room to breathe</em></div>
+          </div>
+          <p>The components follow the same logic: a flat design, readable in full sun on a boat, and simple icons that borrow the language of diving.</p>
+          <figure class="dv-stickers"><img src="../img/divein/stickers.jpg" alt="DiveIn sticker sheet: divers, tank, fish marker, logbook, shell and logo" width="1310" height="2000" loading="lazy"><figcaption>The DiveIn Book stickers, in the spirit of my dad's logbooks.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="cs-sec">
+      <div class="cs-grid">
+        <div><h2>What's next</h2></div>
+        <div class="prose">
+          <p>The DC START project is over, but the adventure continues: the app is going to be rebuilt. The next step is to start again from this prototype and the test feedback to design a new version, then have it tested again by beginner and experienced divers.</p>
+          <a class="dv-download" href="../docs/dossier-divein.pdf" download><span class="dv-download-ic"><svg class="dv-ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3.5h4a1.5 1.5 0 0 1 1.5 1.5v8A1.5 1.5 0 0 0 7 11.5H3z"/><path d="M13 3.5H9.5A1 1 0 0 0 8.5 5v8a1.5 1.5 0 0 1 1.5-1.5h3z"/></svg></span><span><b>Download the full report (in French)</b>PDF · 106 pages · strategy, research, design and business plan</span><span class="dv-download-arrow">↓</span></a>
+        </div>
+      </div>
+    </section>
+
+    <a class="next" href="fabrik">
+      <span>Next project</span>
+      <b>Fabrik →</b>
+    </a>
+
+    <section id="contact" class="contact" aria-labelledby="t-contact">
+      <p class="contact-avail"><span class="dot" aria-hidden="true"></span>Open to a permanent role · Paris area</p>
+      <h2 id="t-contact">Your next Product Designer might just be me.</h2>
+      <p class="contact-sub">I'm looking for a team where I can design useful products, from the field all the way to code. Let's talk.</p>
+      <div class="contact-actions">
+        <a class="btn btn-white" href="mailto:abonnetda@gmail.com"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="2"/><path d="M2.5 4.5 8 9l5.5-4.5"/></svg>Email me</a>
+        <button type="button" class="btn btn-ghost-white copy-mail" data-mail="abonnetda@gmail.com"><svg viewBox="0 0 16 16" aria-hidden="true"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M3 10.5V3.5A1 1 0 0 1 4 2.5h6.5"/></svg><span class="copy-label">Copy email</span></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ft-c">
+    <p class="ft-c-lead">Find me elsewhere</p>
+    <ul class="chips ft-chips">
+      <li><a class="chip c-sky" href="https://www.linkedin.com/in/darylavilabonnet/">LinkedIn ↗</a></li>
+      <li><a class="chip c-lilac" href="https://github.com/davision0102">GitHub ↗</a></li>
+      <li><a class="chip c-lemon" href="../CV-Daryl-Avila-Bonnet-Product-Designer.pdf" download>My CV (PDF, in French) ↓</a></li>
+    </ul>
+    <div class="ft-b-row"><span>© 2026 Daryl Avila Bonnet</span><div class="ft-tools"><button type="button" class="ft-theme" aria-label="Switch to dark mode"><svg class="i-moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.5A5.5 5.5 0 0 1 6.5 2.5a5.5 5.5 0 1 0 7 7z"/></svg><svg class="i-sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 1.5v1.5M8 13v1.5M1.5 8H3M13 8h1.5M3.4 3.4l1 1M11.6 11.6l1 1M3.4 12.6l1-1M11.6 4.4l1-1"/></svg><span class="ft-theme-label">Dark mode</span></button><nav class="ft-lang" aria-label="Langue / Language"><a href="../divein" hreflang="fr" lang="fr">FR</a><a href="divein" hreflang="en" lang="en" aria-current="page">EN</a></nav></div><a href="#top" aria-label="Made with love, back to top">Made with love ↑</a></div>
+  </footer>
+</div>
+<script src="../site.js" defer></script>
+</body>
+</html>

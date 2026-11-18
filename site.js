@@ -31,12 +31,13 @@
 
 // Bouton « Copier mon email » (fonctionne aussi sans animations).
 (function () {
+  var en = document.documentElement.lang === "en";
   document.querySelectorAll(".copy-mail").forEach(function (btn) {
     var label = btn.querySelector(".copy-label"), status = document.querySelector(".copy-status"), mail = btn.dataset.mail, t, orig = label.textContent;
     btn.addEventListener("click", function () {
       var done = function (ok) {
-        label.textContent = ok ? "Email copié ✓" : orig;
-        if (status) status.textContent = ok ? mail + " a été copié." : "Copie impossible : écris-moi à " + mail;
+        label.textContent = ok ? (en ? "Email copied ✓" : "Email copié ✓") : orig;
+        if (status) status.textContent = ok ? mail + (en ? " copied." : " a été copié.") : (en ? "Couldn\u2019t copy. Email me at " : "Copie impossible : écris-moi à ") + mail;
         clearTimeout(t); t = setTimeout(function () { label.textContent = orig; if (status) status.textContent = ""; }, 2500);
       };
       if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(mail).then(function () { done(true); }, function () { window.location.href = "mailto:" + mail; });
@@ -50,10 +51,11 @@
   var root = document.documentElement, btn = document.querySelector(".ft-theme");
   if (!btn) return;
   var meta = document.querySelectorAll('meta[name="theme-color"]');
+  var en = root.lang === "en";
   var label = function () {
     var dark = root.getAttribute("data-theme") === "dark";
-    btn.setAttribute("aria-label", dark ? "Passer en mode clair" : "Passer en mode sombre");
-    var l = btn.querySelector(".ft-theme-label"); if (l) l.textContent = dark ? "Mode clair" : "Mode sombre";
+    btn.setAttribute("aria-label", en ? (dark ? "Switch to light mode" : "Switch to dark mode") : (dark ? "Passer en mode clair" : "Passer en mode sombre"));
+    var l = btn.querySelector(".ft-theme-label"); if (l) l.textContent = en ? (dark ? "Light mode" : "Dark mode") : (dark ? "Mode clair" : "Mode sombre");
     meta.forEach(function (m) { m.setAttribute("content", dark ? "#0b0f1a" : "#ffffff"); });
   };
   label();
